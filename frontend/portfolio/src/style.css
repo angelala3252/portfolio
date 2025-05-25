@@ -5,6 +5,11 @@
     --gray: #D0D4D7ff;
 }
 
+::selection {
+  background: var(--green);
+  color: var(--black);
+}
+
 html, body {
   height: 100%;
   overflow: hidden;
