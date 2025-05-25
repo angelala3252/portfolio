@@ -5,7 +5,7 @@ const Home = () => {
         <>
             <div className='page-content'>
                 <h1>
-                    Angela Zhuo
+                    ANGELA ZHUO
                 </h1>
                 <p>
                     Software Developer, Photographer
