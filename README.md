@@ -1,7 +1,6 @@
 # portfolio
 
 # TODO
-- React
 - Django/Flask
 - home page
 - nav bar
@@ -10,3 +9,4 @@
     - link to ig
 - coding projects page
 - design
+- responsive
