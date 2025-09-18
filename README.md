@@ -8,7 +8,6 @@ npm run start
 ```
 
 # TODO
-- corporate/event photos
     - is there a way to embed ig profile with all the pics
 - about page
 make home page look better

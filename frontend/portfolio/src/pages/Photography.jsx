@@ -14,7 +14,8 @@ const photoFilenames = [
     "cny13.JPG",
     "pride1.JPG",
     "pride2.JPG",
-    "pride3.JPG"
+    "pride3.JPG",
+    "pride4.JPG",
 ];
 
 const Photography = () => {
