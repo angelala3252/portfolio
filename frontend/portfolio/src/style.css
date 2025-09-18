@@ -25,7 +25,8 @@ header {
   align-items: center;
   position: fixed;
   top: 0rem;
-  width: 100%;
+  left: 0;
+  right: 0;
 }
 
 header a,
@@ -203,5 +204,82 @@ button.active {
 
   p {
     text-align: left;
+  }
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.hamburger {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 8px;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.mobile-menu a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.mobile-menu a.active {
+  color: var(--red);
+}
+
+@media (max-width: 768px) {
+  nav#right {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .page-content p {
+    text-align: center;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  #right {
+    margin-right: 0;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .paragraph {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .photography-menu {
+    justify-content: center;
   }
 }

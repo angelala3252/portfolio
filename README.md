@@ -8,8 +8,6 @@ npm run start
 ```
 
 # TODO
-put pic of riot for the icon
-- responsive
 deploy
 - add to resume, ig, apply to jobs!
 //
