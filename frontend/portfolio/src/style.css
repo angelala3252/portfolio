@@ -59,7 +59,7 @@ nav a.active {
 
 .page-container {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   min-height: 100vh;
   width: 100%;
   margin: 0;
@@ -132,4 +132,53 @@ p {
 
 .photo-item img:hover {
   transform: scale(1.05);
+}
+
+.photography-menu {
+  margin-bottom: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: var(--dark);
+  color: var(--white);
+  border: 2px solid var(--red);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: var(--red);
+  color: var(--dark);
+  border-color: var(--white);
+}
+
+button.active {
+  background-color: var(--red);
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.instagram-widget {
+  max-width: 400px;
+  height: 80vh;
+  margin: 2rem auto;
+  flex: 1;
+  background-color: var(--white);
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow: auto;
+  border-radius: 8px;
+}
+
+.instagram-widget iframe {
+  width: 100%;
+  height: 3600px;
+  border: none;
 }
