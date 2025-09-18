@@ -8,8 +8,6 @@ npm run start
 ```
 
 # TODO
-- add to resume, ig, apply to jobs!
-//
 - design
 make home page look better
 - filters? way to show diff projects
