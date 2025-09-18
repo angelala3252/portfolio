@@ -8,7 +8,6 @@ npm run start
 ```
 
 # TODO
-deploy
 - add to resume, ig, apply to jobs!
 //
 - design

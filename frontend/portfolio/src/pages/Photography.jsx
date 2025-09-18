@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const photoFilenames = [
+const corporatePhotoFilenames = [
     "cny1.JPG",
     "cny2.JPG",
     "cny3.JPG",
@@ -20,8 +20,39 @@ const photoFilenames = [
     "pride4.JPG",
 ];
 
+const personalPhotoFilenames = [
+    "newf1.png",
+    "newf2.jpg",
+    "newf3.jpg",
+    "newf4.png",
+    "newf5.jpg",
+    "newf6.jpg",
+    "newf7.jpg",
+    "newf8.jpg",
+    "newf9.jpg",
+    "newf10.jpg",
+    "newf11.jpg",
+    "newf12.jpg",
+    "newf13.jpg",
+    "newf14.jpg",
+    "newf15.jpg",
+    "kev1.jpg",
+    "kev2.jpg",
+    "kev3.jpg",
+    "kev4.jpg",
+    "kev5.jpg",
+    "kev6.jpg",
+    "kev7.jpg",
+    "kev8.jpg",
+    "kev9.jpg",
+    "kev10.jpg",
+    "kev11.jpg",
+    "centre1.JPG",
+];
+
 const Photography = () => {
     const [category, setCategory] = useState("corporate");
+    const photoFilenames = category === "corporate" ? corporatePhotoFilenames : personalPhotoFilenames;
 
     return (
         <div className="page-content">
@@ -40,19 +71,15 @@ const Photography = () => {
                 </button>
             </div>
 
-            {category === "corporate" ?
-                <div className="photo-grid">
-                    {photoFilenames.map((filename, idx) => (
-                        <div key={idx} className="photo-item">
-                            <img src={require(`./images/photography/${filename}`)} alt={`photo-${idx}`} />
-                        </div>
-                    ))}
-                </div>
-                : <div className="instagram-widget">
-                    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-                    <iframe src="//lightwidget.com/widgets/1f6c17526a58553c98293b0df713c6c0.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style={{"width": "100%", "border": "0", "overflow": "hidden"}}></iframe>
-                </div>
-            }
+            <div className="photo-grid">
+                {
+                photoFilenames.map((filename, idx) => (
+                    <div key={idx} className="photo-item">
+                        <img src={require(`./images/photography/${filename}`)} alt={`photo-${idx}`} />
+                    </div>
+                ))}
+            </div>
+            
         </div>
     );
 };
