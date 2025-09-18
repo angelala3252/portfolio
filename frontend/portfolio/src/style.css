@@ -1,67 +1,68 @@
 :root {
-    --red: #D23E45ff;
-    --green: #536745ff;
-    --black: #1F201Dff;
-    --gray: #D0D4D7ff;
+  --red: #B26868;
+  --white: #FAF3F0;
+  --dark: #2C1A1A;
 }
 
 ::selection {
-  background: var(--green);
-  color: var(--black);
+  background: var(--red);
+  color: var(--dark);
 }
 
-html, body {
+html,
+body {
   height: 100%;
   overflow: hidden;
 }
 
 header {
-    background-color: var(--red);
-    min-height: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0rem;
-    width: 100%;
+  background-color: var(--red);
+  min-height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0rem;
+  width: 100%;
 }
 
-header a, header p {
-    color: var(--gray);
-    margin: 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
+header a,
+header p {
+  color: var(--white);
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 header p {
-  color: var(--gray);
+  color: var(--white);
 }
 
 nav a {
-    text-decoration: none;
-    color: var(--gray);
-    margin-left: 1rem;
-    transition: color 0.2s;
+  text-decoration: none;
+  color: var(--white);
+  margin-left: 1rem;
+  transition: color 0.2s;
 }
-  
+
 nav a:hover {
-  color: var(--green);
+  color: var(--dark);
 }
-  
+
 nav a.active {
   font-weight: bold;
-  color: var(--green);
+  color: var(--dark);
 }
-  
+
 
 .page-container {
   position: relative;
   min-height: 100vh;
   width: 100%;
   margin: 0;
-  background-color: var(--black);
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding-top: 2.5rem;
 }
 
@@ -86,13 +87,19 @@ nav a.active {
 #left {
   margin-left: 2rem;
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 #right {
   margin-right: 2rem;
 }
 
-h1, p {
-  color: var(--gray);
+h1,
+p {
+  color: var(--white);
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
