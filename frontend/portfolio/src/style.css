@@ -182,3 +182,26 @@ button.active {
   height: 3600px;
   border: none;
 }
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 2rem;
+
+  img {
+    width: 360px;
+    height: auto;
+  }
+
+  .paragraph {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  p {
+    text-align: left;
+  }
+}
