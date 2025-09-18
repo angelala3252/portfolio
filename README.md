@@ -1,4 +1,8 @@
 # portfolio
+```
+cd frontend
+npm run start
+```
 
 # TODO
 - photography page
