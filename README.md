@@ -1,6 +1,6 @@
 # portfolio
 ```
-cd frontend
+cd frontend/portfolio
 npm run start
 ```
 
